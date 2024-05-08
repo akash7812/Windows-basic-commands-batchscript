@@ -24,56 +24,31 @@ Adapt paths as needed based on your system configuration.
 Execute the necessary commands/batch file for the desired output. 
 # WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
+
+## COMMAND AND OUTPUT
 Create a directory named "MyLab" on the desktop.
-## COMMAND AND OUTPUT
-mkdir %userprofile%\Desktop\MyLab
-![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/147473788/528a3189-2594-433f-b9f8-d4f3ff03510a)
-
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
-## COMMAND AND OUTPUT
-cd %userprofile%\Desktop\MyLab
-![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/147473788/f4261fea-d2ce-4e9f-a081-1d3afeeaf6c0)
-
-![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/147473788/add459fe-4274-4007-ae28-86da5f0aa09e)
-
 List the contents of the "MyLab" directory.
+
+![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/146819826/bc21d979-909e-4435-b577-d592939631ad)
+
 ## COMMAND AND OUTPUT
-dir %userprofile%\Desktop\MyLab
-![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/147473788/d61a108d-87c5-43ec-990e-4c1eccf64faf)
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
+![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/146819826/4a980c87-22fb-4d0f-8f29-69f773826bab)
 
 ## COMMAND AND OUTPUT
-mkdir %userprofile%\Desktop\Backup
-
-copy MyFile.txt %userprofile%\Desktop\Backup
-![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/147473788/453c834a-b6ee-48b5-9472-4ed7877d6c24)
-
-![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/147473788/4c545975-081b-4b54-8d3e-e14b66c37930)
-
 Move the "MyLab" directory to the "Documents" folder.
-## COMMAND AND OUTPUT
-mv Myfile.txt %userprofile%\Documents
-![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/147473788/10c715c8-e70a-454c-aab3-3dffe411996b)
+
+![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/146819826/320683bc-8217-4f55-ac1f-eeae7f26e9a3)
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
-```
-@echo off
-mkdir %userprofile%\Desktop\DocBackup
-copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
-echo Backup completed successfully!
-```
-Modify the script to delete files with the ".docx" extension from the "Documents" folder after creating the backup.
-```
-@echo off
-mkdir %userprofile%\Desktop\DocBackup
-copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
-del %userprofile%\Documents\*.docx
-echo Backup and deletion completed successfully!
-```
-## OUTPUT
-![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/147473788/9566484b-09ef-4248-8f21-e18833ab98de)
+## output
+![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/146819826/bda0e0cc-148c-4b34-ac1a-17ed3905cc57)
+
+![image](https://github.com/vijaygowdu/Windows-basic-commands-batchscript/assets/146819826/f9a16b1f-58d3-4666-8dbb-b8573a232a11)
+
 # RESULT:
 The commands/batch files are executed successfully.
 
